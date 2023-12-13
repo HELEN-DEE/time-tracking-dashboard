@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hwb(195 34% 10%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-selfCare: hsl(43, 84%, 65%);
+
+    /* neutral */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%) ;   
+    --Dark-blue: hsl(235, 46%, 20%);
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: white;
+}
+
+.container {
+    margin: 9% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* name tile start */
+.name-tile {
+    background-color: var(--Dark-blue);
+    border-radius: 12px;
+}
+
+.profile-img img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 3.2rem;
+}
+.profile-img {
+    margin-bottom: 1rem;
+}
+.name-tab {
+    background-color: var(--Blue);
+    border-radius: 12px; 
+    padding: 2rem 0 4rem 1rem;
+    width: 160px;
+    text-align: start;
+}
+.name-tab p{
+    color: var(--Pale-Blue);
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+}
+.name-tab h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.margin-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 20px; 
+}
+.margin-content p {
+    font-size: 14px;
+}
+.margin-content .active {
+    color: var(--Pale-Blue);
+}
+.margin-content p:hover {
+    color: var(--Pale-Blue);
+}
+/* name tilr end */
+
+.content-time {
+    background-color: var(--Dark-blue);
+}
+
+/* adjust tile content start */
+.tile-adjust{
+    padding: 20px ;
+    border-radius: 10px;
+    position: relative;
+    top: -6px;   
+    width: 165px;
+}
+
+.tile-adjust:hover{
+    background-color: hsl(237, 43%, 35%);
+}
+
+.tile-adjust h4 {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.tile-adjust h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+.tile-adjust p {
+    color: var(--Pale-Blue);
+    font-size: 12px;
+}
+
+.tile-adjust span img {
+    width: 15px;
+}
+/* adjusting style content end */
+
+.tile-for-each img {
+    width: 3rem; 
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    padding: 20px;
+}
+
+/* content img background start */
+.border-top {
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-right: 0.5rem;
+}
+.work-img-bg {
+    background-color: var(--Light-red-work);
+}
+.play-img-bg {
+    background-color: var(--Soft-blue-play);
+}
+.study-img-bg {
+    background-color: var(--Light-red-study);
+}
+.exercise-img-bg {
+    background-color: var(--Lime-green-exercise);
+}
+.social-img-bg {
+    background-color: var(--Violet-social);
+}
+.selfCare-img-bg {
+    background-color: var(--Soft-orange-selfCare);
+}
+
+/* content img background end */
+
+.flex-jc-end {
+    display: flex;
+    justify-content: end;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
